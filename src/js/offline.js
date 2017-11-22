@@ -4,7 +4,7 @@
 
         // Options
         this.options = {
-            notify: 'Opps! No internet connection',
+            notify: 'Oops! No internet connection',
             timeout: 10000,
         };
 
