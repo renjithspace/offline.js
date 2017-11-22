@@ -21,5 +21,38 @@
                 }
             }
         }
+
+        /**
+         *----------------
+         * Private Methods
+         *----------------
+         *
+         */
+
+         // Check
+         var check = function() {
+
+             if (navigator.onLine) {
+
+                 // Make AJAX request
+                 var request = new ( window.ActiveXObject || XMLHttpRequest )( "Microsoft.XMLHTTP" );
+                 var rand = Math.floor((1 + Math.random()) * 1000);
+                 request.open( "HEAD", "//" + window.location.hostname + "/?rand=" + rand, false );
+
+                 // Try request status
+                 try {
+                     request.send();
+                     if (request.status == 200) {
+                         unblock();
+                     }
+                 } catch (error) {
+                     block();
+                 }
+             } else {
+                 block();
+             }
+
+         };
+
     };
 }());
