@@ -54,5 +54,7 @@
 
          };
 
+         // Invoke
+         setInterval(check, this.options.timeout);
     };
 }());
