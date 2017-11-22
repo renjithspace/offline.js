@@ -5,7 +5,7 @@
         // Options
         this.options = {
             notify: 'Oops! No internet connection',
-            timeout: 10000,
+            timeout: 7000,
         };
 
         // Extend default options
