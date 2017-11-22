@@ -21,3 +21,10 @@ body {
 h3 {
     margin-top: 30px;
 }
+
+@media only screen and (max-width: 425px) {
+    .well {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+}
