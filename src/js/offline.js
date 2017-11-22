@@ -29,6 +29,8 @@
          *
          */
 
+         var self = this;
+
          // Block
          var block = function() {
 
