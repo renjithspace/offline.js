@@ -47,6 +47,16 @@
              }
          };
 
+         // Unblock
+         var unblock = function() {
+
+             // Remove blocker
+             var blocker = document.querySelector('.offline-blocker');
+             if (blocker) {
+                 blocker.parentNode.removeChild(blocker);
+             }
+         };
+
          // Check
          var check = function() {
 
