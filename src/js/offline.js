@@ -29,6 +29,24 @@
          *
          */
 
+         // Block
+         var block = function() {
+
+             // Create blocker wrapper
+             var blocker = document.createElement('div');
+             blocker.className = 'offline-blocker';
+
+             // Create notification
+             var notify = document.createElement('p');
+             notify.innerHTML = self.options.notify;
+             blocker.appendChild(notify);
+
+             // Append
+             if (!document.querySelectorAll('.offline-blocker').length) {
+                 document.body.appendChild(blocker);
+             }
+         };
+
          // Check
          var check = function() {
 
