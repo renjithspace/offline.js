@@ -1,0 +1,23 @@
+
+/*Offline.js test*/
+body {
+    margin: 0;
+    font-family: monospace;
+    background: #5da7fa;
+    padding-top: 10vh;
+}
+
+.well {
+    max-width: 500px;
+    display: block;
+    margin: auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-top: 30px;
+}
